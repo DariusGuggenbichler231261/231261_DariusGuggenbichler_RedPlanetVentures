@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../Assets/Images/homePageHeader.png);
+}
+
+.topNav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topNav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topNav a.active {
+    background-color: lightblue;
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+
+  .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+  }
+
+  .text {
+    font-size: 100%;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .button2 {
+    background-color: darkturquoise;
+}
+
+.flexcontainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

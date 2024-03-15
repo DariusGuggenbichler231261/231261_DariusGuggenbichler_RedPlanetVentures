@@ -3,21 +3,24 @@
 }
 
 header {
-    background-image: url(../Assets/Images/homePageHeader.png);
+  background-image: url(../Assets/Images/homePageHeader.png);
+  background-size: 100%;
 }
+
 
 .topNav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
 }
 
 .topNav a {
-    float: left;
-    color: white;
+    float: Center;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    opacity: 0.5;
 }
 
 .topNav a:hover {
@@ -26,15 +29,15 @@ header {
 }
 
 .topNav a.active {
-    background-color: lightblue;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: red;
 }
 
 .footer {
-    background-color: #333;
+    background-color: #ffffff;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: grey;
   }
 
 
@@ -59,14 +62,22 @@ header {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 8px;
+    background-color: red;
   }
 
-  .button2 {
-    background-color: darkturquoise;
-}
 
 .flexcontainer1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Assets/Images/homePageHeader.png);
+}
+
+.flexItem1 {
+  padding: 0px;
+  flex: 50%;
 }

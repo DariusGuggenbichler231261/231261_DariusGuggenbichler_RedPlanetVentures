@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-header {
-  background-image: url(../Assets/Images/homePageHeader.png);
-  background-size: 100%;
-}
-
 
 .topNav {
     overflow: hidden;
@@ -81,3 +76,51 @@ header {
   padding: 0px;
   flex: 50%;
 }
+
+.flexcontainer2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: white;
+}
+
+.flexItem2 {
+  color: #ffffff;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flexItem2 img{
+  width: 100%;
+}
+
+.flexcontainer3 {
+  display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+.flexcontainer4 {    
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: white;
+}
+

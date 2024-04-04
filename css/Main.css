@@ -70,6 +70,11 @@ nav {
     text-align-last: center;
   }
 
+@font-face {
+  font-family: 'Porter Sans Block';
+  src: url(../Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(".woff");
+}
+
 /* Index */
 .headerSection {
     display: flex;
@@ -79,11 +84,6 @@ nav {
     justify-content: flex-start;
     align-items: flex-end;
     padding: 3em;
-}
-
-@font-face {
-  font-family: 'Porter Sans Block';
-  src: url(../Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(".woff");
 }
 
 .headerSection h1 {

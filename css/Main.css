@@ -1,7 +1,19 @@
+/* All */
 *{
     box-sizing: border-box;
 }
 
+body {
+  margin: 0% !important;
+}
+
+nav {
+  background: black;                                                                  
+  margin: 0;                                                                          
+  padding: 0;                                                                         
+  position: absolute;                                                                 
+  width: 100%;
+}
 
 .topNav {
     overflow: hidden;
@@ -35,19 +47,266 @@
     color: grey;
   }
 
-
-  .container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1px;
-  }
-
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: red;
+  } 
+  
   .text {
     font-size: 100%;
   }
 
-  .button {
+  .center {
+    text-align-last: center;
+  }
+
+/* Index */
+.headerSection {
+    display: flex;
+    background-image: url(../Assets/Images/homePageHeader.png);
+    background-size: cover;
+    height: 700px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 3em;
+}
+
+@font-face {
+  font-family: 'Porter Sans Block';
+  src: url(../Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(".woff");
+}
+
+.headerSection h1 {
+  color: red;
+  font-family: 'Porter Sans Block';
+}
+
+.flexHeaderItem {
+  flex: 50%;
+}
+
+.flexContainer1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30 px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: purple;
+}
+
+.flexItem1 {
+    color: white;
+    padding: 5%;
+    flex: 50%;
+}
+
+.flexItem1 img {
+  width: 100%;
+}
+
+.flexContainer2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30 px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.flexItem2 {
+  color: black;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexItem2 img {
+  width: 100%;
+}
+
+.flexContainer3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: purple;    
+}
+
+.flexItem3 {
+    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0%;
+    flex: 50%;
+}
+
+.flexItem3 img {
+  width: 40%;
+}
+
+.flexContainerRow {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: purple;
+}
+
+.flexItemRow {
+  color: white;
+  padding: 5%;
+  flex: 50%;
+}
+
+/* Flights */
+.flexContainer4 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30 px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.flexItem4 {
+  color: black;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexItem4 img {
+  width: 100%;
+}
+
+.flexContainer5 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: purple; 
+}
+
+.flexItem5 {
+  color: White;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexItem5 img {
+  width: 100%;
+}
+
+/* Contact */
+.flexContainer6 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30 px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.flexItem6 {
+  color: black;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexContainer7 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30 px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.flexItem7 {
+  color: white;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexContainerColumn {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: left;
+  justify-content: center;
+  color: black;
+  background-color: white;
+}
+
+.flexItemColumn {
+  color: Black;
+  padding: 5%;
+  flex: 50%;
+}
+
+.flexItemColumn img {
+  width: 100%;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact {
+  background-image: url(../Assets/Images/formBack.png);
+  background-size: cover;
+  background-position: right;
+  padding: 2em 4em;
+  margin: 50px 0;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -59,68 +318,6 @@
     cursor: pointer;
     border-radius: 8px;
     background-color: red;
-  }
-
-
-.flexcontainer1 {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../Assets/Images/homePageHeader.png);
 }
 
-.flexItem1 {
-  padding: 0px;
-  flex: 50%;
-}
-
-.flexcontainer2 {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: white;
-}
-
-.flexItem2 {
-  color: #ffffff;
-  padding: 10px;
-  flex: 50%;
-}
-
-.flexItem2 img{
-  width: 100%;
-}
-
-.flexcontainer3 {
-  display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-}
-
-
-
-
-
-.flexcontainer4 {    
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: white;
-}
-
+/* Unspesified */

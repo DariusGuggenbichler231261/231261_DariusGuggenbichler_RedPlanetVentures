@@ -15,9 +15,31 @@ nav {
   width: 100%;
 }
 
+.Headercontainer {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  background-color: #c95151;
+  background-image: url(../Assets/Images/homePageHeader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .topNav {
-    overflow: hidden;
-    background-color: #ffffff;
+  width: 80%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255,.6);
+  padding: 0 3em;
+  border-radius: 30px;
+}
+
+.NavFlex a{
+  padding: 15px;
 }
 
 .topNav a {
@@ -31,21 +53,16 @@ nav {
 }
 
 .topNav a:hover {
-    background-color: #ddd;
+    background-color: #dddddd00;
     color: black;
 }
 
 .topNav a.active {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     color: red;
 }
 
-.footer {
-    background-color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    color: grey;
-  }
+
 
   .button {
     border: none;
@@ -170,12 +187,24 @@ nav {
   align-items: center;
   color: white;
   background-color: purple;
+  padding: 2em;
+  margin: 0%;
 }
 
 .flexItemRow {
   color: white;
   padding: 5%;
   flex: 50%;
+}
+
+.flexItemRow img {
+  width: 278px;
+  height: 278px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  overflow: hidden;
+  flex-direction: row;
 }
 
 /* Flights */
@@ -225,7 +254,7 @@ nav {
 .flexContainer6 {
   display: flex;
   flex-direction: row;
-  font-size: 30 px;
+  font-size: 70 px;
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -245,9 +274,10 @@ nav {
   font-size: 30 px;
   text-align: left;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   color: black;
   background-color: white;
+  align-items: center;
 }
 
 .flexItem7 {
@@ -261,9 +291,10 @@ nav {
   flex-direction: column;
   font-size: 30px;
   text-align: left;
-  justify-content: center;
+  justify-content: left;
   color: black;
   background-color: white;
+  align-items: center;
 }
 
 .flexItemColumn {
@@ -290,6 +321,9 @@ fieldset {
   background-position: right;
   padding: 2em 4em;
   margin: 50px 0;
+  border-radius: 5%;
+  width: 75%;
+  align-items: center;
 }
 
 #contact input, #contact textarea {
@@ -320,4 +354,49 @@ fieldset {
     background-color: red;
 }
 
-/* Unspesified */
+/* Footer */
+
+.footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .FooterContainer {
+    display: flex;
+    flex-direction: Row;
+    font-size: 30 px;
+    text-align: center;
+    justify-content: center;
+    align-items: left;
+    color: black;
+    background-color: white;
+    align-content: flex-start;
+  }
+  
+  .flexFooterItem {
+    color: white;
+    padding: 5%;
+    flex: 50%;
+  }
+  
+  .colomn {
+    flex: 1;
+    padding: 10%;
+  }
+
+  .left-column img{
+    width: 100%;
+    padding: auto;
+  }
+
+  .right-column {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+  }
+
+/* Unspecified */

@@ -108,8 +108,24 @@ nav {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: lightblue;
+    background-color: turquoise;
   }
+
+.button3 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: darkred;
+    float: right;
+}
 
   .text {
     font-size: 100%;
@@ -240,6 +256,23 @@ nav {
 }
 
 /* Flights */
+.headerFlight {
+  display: flex;
+  background-image: url(../Assets/Images/headerbackBack.png);
+  background-size: cover;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 3em;
+}
+
+.headerFlight h1 {
+  color: white;
+  font-family: 'Porter Sans Block';
+  text-align: center;
+}
+
 .flexContainer4 {
   display: flex;
   flex-direction: row;
@@ -259,6 +292,11 @@ nav {
 
 .flexItem4 img {
   width: 100%;
+}
+
+.flexItem4 h4 {
+  color: grey;
+  font-size: x-large;
 }
 
 .flexContainer5 {
@@ -282,7 +320,28 @@ nav {
   width: 100%;
 }
 
+.flexItem5 h4 {
+  color: lightgray;
+  font-size: x-large;
+}
+
 /* Contact */
+.headerContact {
+  display: flex;
+  background-image: url(../Assets/Images/headerbackBack.png);
+  background-size: cover;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 3em;
+}
+
+.headerContact h1 {
+  color: white;
+  font-family: 'Porter Sans Block';
+}
+
 .flexContainer6 {
   display: flex;
   flex-direction: row;
@@ -399,44 +458,22 @@ fieldset {
 
   .FooterContainer {
     display: flex;
-    flex-direction: Row;
-    font-size: 30 px;
-    text-align: center;
-    justify-content: center;
-    align-items: left;
-    color: black;
-    background-color: white;
+    height: 600px;
+    flex-wrap: wrap;
     align-content: flex-start;
+    overflow: scroll;
+    background-color: white;
+    padding: 20px;
+    align-items: stretch;
+    justify-content: space-between;
   }
   
-  .flexFooterItem {
-    color: white;
-    padding: 5%;
-    flex: 50%;
+  .FooterContainer div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
   }
-  
-  .colomn {
-    float: left;
-    padding: 10px;
-  }
-
-  .column.side {
-    width: 33%;
-  }
-
-  .column.side img{
-    width: 100%;
-    padding: auto;
-  }
-
-  .column.middle {
-    width: 33%;
-  }
-
-  .row {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 /* Unspecified */

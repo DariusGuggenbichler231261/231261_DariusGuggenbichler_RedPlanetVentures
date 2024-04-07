@@ -31,6 +31,7 @@ nav {
   height: 90px;
   display: flex;
   flex-direction: row;
+  align-content: space-between;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255,.6);
@@ -40,6 +41,7 @@ nav {
 
 .NavFlex a{
   padding: 15px;
+  align-content: space-around;
 }
 
 .topNav a {
@@ -54,7 +56,7 @@ nav {
 
 .topNav a:hover {
     background-color: #dddddd00;
-    color: black;
+    color: rgb(105, 105, 105);
 }
 
 .topNav a.active {
@@ -79,6 +81,36 @@ nav {
     background-color: red;
   } 
   
+  .button1 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: purple;
+  }
+  
+  .button2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: lightblue;
+  }
+
   .text {
     font-size: 100%;
   }
@@ -211,7 +243,7 @@ nav {
 .flexContainer4 {
   display: flex;
   flex-direction: row;
-  font-size: 30 px;
+  font-size: 30px;
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -233,7 +265,7 @@ nav {
     display: flex;
     flex-direction: row;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
     color: white;
@@ -384,19 +416,27 @@ fieldset {
   }
   
   .colomn {
-    flex: 1;
-    padding: 10%;
+    float: left;
+    padding: 10px;
   }
 
-  .left-column img{
+  .column.side {
+    width: 33%;
+  }
+
+  .column.side img{
     width: 100%;
     padding: auto;
   }
 
-  .right-column {
-    width: 25%;
-    height: auto;
-    margin-right: 5px;
+  .column.middle {
+    width: 33%;
+  }
+
+  .row {
+    content: "";
+    display: table;
+    clear: both;
   }
 
 /* Unspecified */

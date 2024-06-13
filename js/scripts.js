@@ -23,9 +23,7 @@ function getValues(event);
     <p>Submit: <span>${formData.submit}</span></p>
     `
 
-    document.querySelector(".out code").innerHTML = out;
-
-     .push(formData);
+ 
 
 var modal = document.getElementById("myModal");
 
@@ -47,5 +45,11 @@ window.onclick = function(event) {
   }
 }
 
-    
-     
+
+function openCartModal() {
+  total();
+  var myModal = new bootstrap.Modal(document.getElementById('cartModal'), {
+      keyboard: false
+  });
+  myModal.show();
+}

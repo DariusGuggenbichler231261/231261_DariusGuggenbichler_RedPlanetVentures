@@ -207,7 +207,7 @@ body {
     background-color: turquoise;
   }
 
-.button3 {
+  .button3 {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -220,7 +220,7 @@ body {
     cursor: pointer;
     border-radius: 8px;
     background-color: darkred;
-    float: right;
+    margin-top: 20%;
 }
 
   .text {
@@ -254,7 +254,7 @@ body {
 }
 
 .headerSection h3 {
-  color: #2B2868;
+  color: cyan;
 }
 
 .flexHeaderItem {
@@ -614,6 +614,42 @@ span {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
+}
+
+.minus, .plus{
+  width:40px;
+  height:40px;
+  background:#7c65e4;
+  color: #fff;
+  border-radius:5px;
+  padding:5px 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.minus:hover, .plus:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: #7c65e4;
+  transition: all 0.5s ease-in;
+}
+
+.number input{
+  height: 40px;
+  width: 100px;
+  background-color: #7c65e4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius:4px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.availableText h3{
+  font-size: 25px;
 }
 
 /* Contact */
